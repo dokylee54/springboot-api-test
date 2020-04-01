@@ -1,0 +1,12 @@
+server:
+  port: 8080
+
+spring:
+  datasource:
+#    url: jdbc:h2:tcp://localhost/~/test
+#    driver-class-name: org.h2.Driver
+#    username: sa
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    properties.hibernate.hbm2ddl.auto: update   # 자동 생성 안하려면 none
+    showSql: true  # jpa가 실행하는 쿼리를 console 로그로 출력하기 위한 설정
